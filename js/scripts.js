@@ -24,18 +24,20 @@ $(document).ready(function(){
       var currentChar = inputArray[i];
       console.log(currentChar);
       console.log(inputCount);
-        if (inputCount === 1 && currentChar === "a" || currentChar === "A" || currentChar === "e" || currentChar === "E" ||  currentChar === "i" || currentChar === "I" ||  currentChar === "o" || currentChar === "O" ||  currentChar === "u" || currentChar === "U") {
+        if (inputCount === 1 && currentChar === "a" || inputCount === 1 && currentChar === "A" || inputCount === 1 && currentChar === "e" || inputCount === 1 && currentChar === "E" ||  inputCount === 1 && currentChar === "i" || inputCount === 1 && currentChar === "I" ||  inputCount === 1 && currentChar === "o" || inputCount === 1 && currentChar === "O" ||  inputCount === 1 && currentChar === "u" || inputCount === 1 && currentChar === "U") {
           $("#output").text(inputArray.join("") + "way")
           console.log("vowel first letter");
+          console.log(inputCount);
           break;
-        } else if (currentChar === "a" || currentChar === "A" || currentChar === "e" || currentChar === "E" ||  currentChar === "i" || currentChar === "I" ||  currentChar === "o" || currentChar === "O" ||  currentChar === "u" || currentChar === "U" && inputCount > 1) {
+        } else if (inputCount > 1 && currentChar === "a" || inputCount > 1 && currentChar === "A" || inputCount > 1 && currentChar === "e" || inputCount > 1 && currentChar === "E" || inputCount > 1 && currentChar === "i" || inputCount > 1 && currentChar === "I" || inputCount > 1 && currentChar === "o" || inputCount > 1 && currentChar === "O" || inputCount > 1 && currentChar === "u" || inputCount > 1 && currentChar === "U") {
           $("#output").text(inputArray.join("") + concatArray.join("") + "ay");
           console.log("vowel later");
           break;
-        // } else if (currentChar !== "a" || currentChar !== "A" || currentChar !== "e" || currentChar !== "E" ||  currentChar !== "i" || currentChar !== "I" ||  currentChar !== "o" || currentChar !== "O" ||  currentChar !== "u" || currentChar !== "U") {
-        //   concatArray.push(currentChar);
-        //   inputArray.shift();
-        //   continue;
+        } else {
+          concatArray.push(currentChar);
+          inputArray.splice(0, 1);
+          console.log(inputArray);
+          continue;
         }
       }
     }
