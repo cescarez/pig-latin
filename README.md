@@ -6,7 +6,7 @@ _Epicodus Week 10, Oct. 2018_
 
 ## Description
 
-A webpage that will take a user input and translate it to pig latin. Check out the pig latin wikiHow here: https://www.wikihow.com/Speak-Pig-Latin
+A webpage that will take a user input and translate it to pig latin. Learn more about pig latin: http://www.piglatin.org/pig_latin_rules
 
 ## Setup/Installation Requirements
 
@@ -38,6 +38,7 @@ _Contact christabel.escarez@gmail.com with any technical issues._
 * _HTML_
 * _CSS_
   * _Bootstrap 3.3.7_
+  * _CSS Grid_
 * _JavaScript_
   * _jQuery 3.3.1_
 
