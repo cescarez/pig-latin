@@ -19,7 +19,7 @@ $(document).ready(function(){
       }
       console.log(inputArray);
 
-      for (i = 0; i < inputArray.length; i++) {
+      for (i = 0; i < inputArray.length; i) {
         inputCount += 1;
       var currentChar = inputArray[i];
       console.log(currentChar);
