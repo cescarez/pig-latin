@@ -27,7 +27,7 @@ A webpage that will take a user input and translate it to pig latin. Learn more 
 
 ## Known Bugs
 
-_No known bugs, to date._
+_Currently only works with single word inputs._
 
 ## Support and contact details
 
